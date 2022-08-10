@@ -18,7 +18,7 @@ try:
     x = browser.find_element(By.ID, "input_value").text
 
     input = browser.find_element(By.ID, "answer")
-    input.send_keys(calc(726))
+    input.send_keys(calc(x))
 
     checkbox = browser.find_element(By.ID, "robotCheckbox")
     checkbox.click()
