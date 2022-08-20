@@ -4,7 +4,9 @@ from selenium.webdriver.common.by import By
 import time
 link = "http://suninjuly.github.io/find_link_text"
 
-s = Service("C:\\chromedriver.exe")
+#s = Service("C:\\chromedriver.exe")
+s = Service("/usr/local/bin/chromedriver")
+
 try:
     browser = webdriver.Chrome(service=s)
 
@@ -23,7 +25,7 @@ try:
 
 finally:
     # успеваем скопировать код за 30 секунд
-    time.sleep(30)
+    time.sleep(10)
     # закрываем браузер после всех манипуляций
     browser.quit()
 
